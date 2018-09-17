@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-#Global Variables
+#Global Variabless
 time_array = []
 timer_array = []
 pot_array = []
