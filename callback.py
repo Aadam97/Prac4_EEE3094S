@@ -33,4 +33,12 @@ def frequency(channel):
       		sleeptime = 2
     	elif (sleeptime==2):
       		sleeptime = 0.5
+		
+#when the stop button is pressed, it toggles the stop_start between 		
+def stop(channel):
+	global stop_start
+	if (stop_start == True):
+		stop_start=False
+	else:
+		stop_start=True
 
