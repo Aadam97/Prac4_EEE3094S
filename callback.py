@@ -41,4 +41,12 @@ def stop(channel):
 		stop_start=False
 	else:
 		stop_start=True
+		
+#display function used to display the Time, Timer, POT, TEMP, LIGHT 		
+def display(channel):
+	ter=sp.call('clear' ,shell=True)
+	print('{:9} {:7} {:6} {:6} {:5}'.format("Time", "Timer", "Pot","Temp","Light"))
+	for i in range (5):
+		print('{:9} {:<7.2f} {:<3.1f} {:2} {:<3.0f} {:2} {:<3.0f} {:2}'.format(time_array.pop(), timer_array.pop(), pot_array.pop(),"V", tempre_array.pop(),"C",light_array.pop(),"%"))
+
 
