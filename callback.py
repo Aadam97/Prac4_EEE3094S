@@ -24,3 +24,13 @@ def reset(channel):
 	print('{:9} {:7} {:6} {:6} {:5}'.format("Time", "Timer", "Pot","Temp","Light"))
 	time.sleep(1)
 
+#when the frequency button is pressed, it toggles between 0.5, 1 and 2	
+def frequency(channel):
+	global sleeptime
+	if (sleeptime == 0.5):
+      		sleeptime = 1
+  	elif (sleeptime == 1):
+      		sleeptime = 2
+    	elif (sleeptime==2):
+      		sleeptime = 0.5
+
